@@ -1,0 +1,50 @@
+Primero instale json server (https://github.com/typicode/json-server) de manera local, solo en esta carpeta (ya tengo nodeJS en mi maquina)
+    npm install json-server
+
+Despues levante el servicio indicando la ruta del archivo json
+    npx json-server .\assets\db.json
+
+Para la lista de opciones (una opcion es el cambiar de puerto)
+    npx json-server --help
+
+Ya en insomnia
+    Create a new request collection
+    New request (ctrl + N)
+    --En este punto ya debe estar levantado el servicio
+    Poner nombre (READ santos)
+    Ingresar la ruta (http://localhost:3000/santos)
+    Send
+
+    Creamos una nueva request 
+    READ santo
+    ruta http://localhost:3000/santos/1
+
+    Creacion de una nueva request para introducir un nuevo santo
+    nombre CREATE santo
+    metodo POST
+    estructura JSON en body
+    ruta http://localhost:3000/santos
+    En body ingresamos la estructura de un nuevo santo 
+        {
+            "id": 6,
+            "nombre": "Saga",
+            "constelacion": "Geminis"
+        }
+    y como estamos trabajando de manera local podemos observar que se agrega a nuestro archivo .json
+
+    Creacion de una nueva peticion de tipo PUT para actualizacion de datos
+    nombre UPDATE santo
+    metodo PUT 
+    estructura json en body
+    ruta http://localhost:3000/santos/  (especificando el id que queremos modificar)
+    estructura en json en body
+        {
+            "name": "Saga",
+            "constelacion": "Gemini"
+        }
+    enviar
+
+    Creacion de una peticion DELETE para eliminar
+    nombre DELETE santo
+    metodo DELETE
+    ruta http://localhost:3000/santos/6 indicando el id del santo a eliminar
