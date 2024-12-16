@@ -1,0 +1,11 @@
+{
+    "cadena": "Manuel",
+    "numero": "20",
+    "boolean": "true",
+    "arreglo": ["Estudiar", "Rodar", "Comer"],
+    "objeto": {
+        "instagram": "Kobra_gloryg",
+        "email": "manuel@gmail.com"
+    },
+    "nulo": "null"
+}
