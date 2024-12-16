@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando elementos Cool Style</title>
+    <style>
+        :root{
+            --yellow-color: #F7DF1E;
+            --dark-color: #222;
+        }
+
+        .cards{
+            border: thin solid var(--dark-color);
+            padding: 1rem;
+        }
+
+        .card{
+            display: inline-block;
+            background-color: var(--dark-color);
+            color: var(--yellow-color);
+        }
+
+        .card figcaption{
+            padding: 1rem;
+        }
+
+        .rotate-45{
+            transform: rotate(45deg);
+        }
+
+        .rotate-135{
+            transform: rotate(135deg);
+        }
+
+        .opacity-80{
+            opacity: .8;
+        }
+
+        .sepia{
+            filter: sepia(1);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Nodos, elementos y selectores</h1>
+    <hr>
+    <h1>WEB APIs</h1>
+    <h2>DOM: Document Object Model</h2>
+    <h2>BOM: Browser Object Model</h2>
+    <h2>CSSOM: CSS Object Model</h2>
+    <h2>WEB APIs</h2>
+    <ul>
+        <li>Eventos</li>
+        <li>Forms</li>
+        <li>AJAX-Fetch</li>
+        <li>History</li>
+        <li>Web Storage</li>
+        <li>Geolocation</li>
+        <li>Drag & Drop</li>
+        <li>Indexed DB</li>
+        <li>Canvas</li>
+        <li>MatchMedia</li>
+        <li>Etc</li>
+    </ul>
+    <br>
+    <hr>
+    <br>
+    <h3>Manejo del DOM</h3>
+    <p id="que-es">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, dolorum odio neque exercitationem maiores consectetur tempore, suscipit inventore, error animi aut commodi aliquid eligendi rem culpa dignissimos et corrupti aliquam?
+    </p>
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Seccion 1</a></li>
+            <li><a href="#">Seccion 2</a></li>
+            <li><a href="#">Seccion 3</a></li>
+            <li><a href="#">Seccion 4</a></li>
+            <li><a href="#">Seccion 5</a></li>
+        </ul>
+    </nav>
+    <input type="text" name="nombre" placeholder="Nombre">
+
+    <!-- Data attributes -->
+
+    <a class="link-dom" href="index.html" style="background-color: yellow; color: blue;" data-description="Document Object Model">DOM</a>
+    <section class="cards">
+        <figure class="card">
+            <img src="/51. nodos_elementos_selectores/images/tech.jpg" alt="Tech">
+            <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="/51. nodos_elementos_selectores/images/animals.jpg" alt="Animals">
+            <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="/51. nodos_elementos_selectores/images/people.jpg" alt="People">
+            <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="/51. nodos_elementos_selectores/images/arch.jpg" alt="Arch">
+            <figcaption>Arch</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="/51. nodos_elementos_selectores/images/nature.jpg" alt="Nature">
+            <figcaption>Nature</figcaption>
+        </figure>
+    </section>
+    <script src="dom.js"></script>
+</body>
+</html>
