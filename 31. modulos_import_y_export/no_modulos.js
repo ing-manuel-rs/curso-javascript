@@ -1,0 +1,1 @@
+console.log("En caso de que el navegador no soporte +ES6");

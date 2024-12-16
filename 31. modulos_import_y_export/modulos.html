@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulos, import y export</title>
+</head>
+<body>
+    <h1>Modulos, import y export</h1>
+    <!-- Con type=module para aceptar modulos -->
+    <script src="modulos.js" type="module"></script>
+
+    <!--En caso de no soportar modulos agregamos otra version del codigo 
+        usamos nomodule para en caso de que el navegador si soporte +ES6
+        no cargue los dos archivos y solo el de arriba -->
+    <script src="no_modulos.js" nomodule></script> 
+</body>
+</html>
